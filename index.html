@@ -1,94 +1,111 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8" />
-    <title>Igor Kachanov Resume</title>
-</head>
-<body>
-    <table cellspacing="15">
-        <tr>
-            <td>
-                <img src="static/ik_foto.jpg" width="200" alt="Фото"/>
-            </td>
-            <td>
-                <h1>Игорь Качанов</h1>
-                <p><em>Фронтенд-разработчик на <strong>WebGL</strong></em></p>
-            </td> 
-        </tr>
-    </table>
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-    <hr>
+body {
+    background-color: #f1f1f1;
+    color: #0f141e;
 
-    <h2>Мои соцсети</h2>
-    <ul type="square">
-         <li><a href="https://t.me/ivkachanov" target="_blank">Telegram</a></li>
-        <li><a href="https://vk.com/id63644824" target="_blank">VKontakte</a></li>
-    </ul>
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
 
-    <hr>
+a {
+    color: black;
+    text-decoration: underline;
+}
 
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>3D графика</li>
-        <li>Чтение книг</li>
-        <li>Музыка</li>
-    </ol>
+a:hover {
+    text-decoration: wavy;
+    color: blue;
+}
 
-    <hr>
+a:visited {
+    color:blueviolet;
+}
 
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>
-                    Компания
-                </th>
-                <th>
-                    Должность
-                </th>
-                <th>
-                    Годы работы
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Название компании 1</td>
-                <td>Должность</td>
-                <td>Годы работы</td>
-            </tr>
-            <tr>
-                <td>Название компании 2</td>
-                <td>Должность</td>
-                <td>Годы работы</td>
-            </tr>
-            <tr>
-                <td>Название компании 3</td>
-                <td>Должность</td>
-                <td>Годы работы</td>
-            </tr>
-        </tbody>
-    </table>
+.avatar {
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
 
-    <hr>
+.info {
+    display: flex;
+    margin-bottom: 15px;
+}
 
-    <h2>Работы в THREE.JS</h2>
-    <a href="threejsWorks.html">Посмотреть список</a>
+@media (max-width: 700px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+}
 
-    <hr>
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите ваше имя">
-        <br>
-        <label for="email">Ваш email:</label>
-        <input type="text" id="email" placeholder="Введите ваш email">
-        <br>
-        <label for="text">Ваше сообщение:</label>
-        <br>
-        <textarea id="text" cols="60" rows="10"></textarea>
-        <br>
-        <input type="submit" value="Связаться">
-    </form>
-    
-</body>
-</html>
+.info-text {
+    margin-left: 40px;
+}
+
+.info p {
+    color: #86898f;
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+}
+
+
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.bg-yellow {
+    background: #f5ebbd;
+}
+
+.bg-red {
+    background: #f3dcdc;
+}
+
+.bg-green {
+    background: #d8f3c5;
+}
+
+.orderedList {
+    padding: 0 20px;
+}
+
+.orderedList li {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color: #474a50;
+}
+
+.form-block label {
+    display: block;
+    font-size: 14px;
+    color: #86898f;
+    margin-top: 15px;
+}
