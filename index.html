@@ -1,111 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Igor Kachanov Resume</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <img class="avatar" src="static/ik_foto.jpg" alt="Фото"/>
+            <div class="info-text">
+                    <h1>Игорь Качанов</h1>
+                    <p><em>Фронтенд-разработчик на <strong>WebGL</strong></em></p>
 
-body {
-    background-color: #f1f1f1;
-    color: #0f141e;
+                    <h4>Контакты</h4>
+                    <a href="https://t.me/ivkachanov" target="_blank">Telegram</a>
+                    |
+                    <a href="https://vk.com/id63644824" target="_blank">VKontakte</a>
+                    |
+                    <a>тел. +7-904-286-05-96 </a>
+            </div>
+        </div>
+        
 
-    font-size: 16px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-}
-
-a {
-    color: black;
-    text-decoration: underline;
-}
-
-a:hover {
-    text-decoration: wavy;
-    color: blue;
-}
-
-a:visited {
-    color:blueviolet;
-}
-
-.avatar {
-    width: 200px;
-    border-radius: 20px;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
-}
-
-.info {
-    display: flex;
-    margin-bottom: 15px;
-}
-
-@media (max-width: 700px) {
-    .info {
-        display: block;
-        text-align: center;
-    }
-}
-
-.info-text {
-    margin-left: 40px;
-}
-
-.info p {
-    color: #86898f;
-    margin: 0;
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.container {
-    max-width: 750px;
-    margin: auto;
-}
+        <div class="card bg-green" >
+            <h2>Мои хобби</h2>
+            <ol class="orderedList">
+                <li>3D графика</li>
+                <li>Чтение книг</li>
+                <li>Музыка</li>
+             </ol>
+        </div>
 
 
-.card {
-    padding: 15px 20px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-}
+        <div class="card bg-red">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                    <tr>
+                        <td>Название компании 1</td>
+                        <td>Должность</td>
+                        <td>Годы работы</td>
+                    </tr>
+                    <tr>
+                        <td>Название компании 2</td>
+                        <td>Должность</td>
+                        <td>Годы работы</td>
+                    </tr>
+                    <tr>
+                        <td>Название компании 3</td>
+                        <td>Должность</td>
+                        <td>Годы работы</td>
+                    </tr>
+            </table>
+        </div>
+        
 
-.card h2 {
-    margin-bottom: 10px;
-}
 
-.bg-yellow {
-    background: #f5ebbd;
-}
+        <div class="card bg-yellow">
+            <h2>Работы в THREE.JS</h2>
+            <a href="threejsWorks.html">Посмотреть список</a>
+         </div>
 
-.bg-red {
-    background: #f3dcdc;
-}
+        <div class="card">
+            <h2>Связаться со мной</h2>
+            <form action="/">
+                <div class="form-block">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите ваше имя">
+                </div>
 
-.bg-green {
-    background: #d8f3c5;
-}
+                <div class="form-block">
+                    <label for="email">Ваш email:</label>
+                    <input type="text" id="email" placeholder="Введите ваш email">
+                </div>
 
-.orderedList {
-    padding: 0 20px;
-}
+                <div class="form-block">
+                    <label for="text">Ваше сообщение:</label>
+                    <textarea id="text" cols="60" rows="10"></textarea>
+                </div>
 
-.orderedList li {
-    color: black;
-    margin-bottom: 10px;
-}
-
-.table {
-    width: 100%;
-}
-
-.table td {
-    padding-bottom: 10px;
-}
-
-.table td:nth-child(2),
-.table td:nth-child(3) {
-    color: #474a50;
-}
-
-.form-block label {
-    display: block;
-    font-size: 14px;
-    color: #86898f;
-    margin-top: 15px;
-}
+                <input type="submit" value="Связаться">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
